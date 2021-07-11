@@ -15,12 +15,13 @@ export function AuthProvider({ children }) {
   }
 
   useEffect(() => {
-    auth.onAuthStateChanged((user) => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
     });
+    return unsubscribe;
   }, []);
 
-  const value = { currentUser };
+  const value = { currentUser, signUp };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
