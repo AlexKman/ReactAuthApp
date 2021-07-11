@@ -1,4 +1,9 @@
-Within this project I am creating a full scale react application. Currently beginning with the authentication layer through firebase and using Material UI
+Within this project I am creating a full scale react application. Currently beginning with the authentication layer through firebase and using React Bootstrap
+
+Resources used:
+
+1. https://reactjs.org/docs/hooks-reference.html
+2. https://react-bootstrap.github.io/components/alerts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
