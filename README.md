@@ -3,8 +3,9 @@ Within this project I am creating a full scale react application. Currently begi
 Resources used:
 
 1. https://reactjs.org/docs/hooks-reference.html
-2. https://react-bootstrap.github.io/components/alerts
-3. https://medium.com/@erbashakann/how-to-use-context-api-basically-with-authentication-example-33b36d955734
+2. https://firebase.google.com/docs/auth
+3. https://react-bootstrap.github.io/components/alerts
+4. https://medium.com/@erbashakann/how-to-use-context-api-basically-with-authentication-example-33b36d955734
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
