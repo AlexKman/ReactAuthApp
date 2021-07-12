@@ -54,8 +54,9 @@ export default function SignUp() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        Already have an account? Click{" "}
+        Already have an account? Click
         <Link style={{ textDecoration: "none" }} to="/login">
+          {" "}
           here
         </Link>
         .
