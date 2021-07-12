@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 export default function SignUp() {
@@ -52,7 +53,13 @@ export default function SignUp() {
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">Already have an account?</div>
+      <div className="w-100 text-center mt-2">
+        Already have an account? Click{" "}
+        <Link style={{ textDecoration: "none" }} to="/login">
+          here
+        </Link>
+        .
+      </div>
     </div>
   );
 }
