@@ -49,7 +49,7 @@ export default function Login() {
       <div className="w-100 text-center mt-2">
         Need an account? Click{" "}
         <Link style={{ textDecoration: "none" }} to="/signup">
-          here
+          here{" "}
         </Link>
         to sign up
       </div>
