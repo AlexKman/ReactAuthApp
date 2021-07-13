@@ -1,4 +1,16 @@
-Within this project I am creating a full scale react application. Currently beginning with the authentication layer through firebase and using React Bootstrap
+Within this project is everything needed for authentication within a React Application using firebase. Within this project you can; sign up, login, reset password, change email and set authentication around routing using React Router.
+
+I intend to use this as a sort of 'component' for my other projects as to why I have used React-Bootstrap for its simplicity, it is very simple to switch around and use your own styling or a different framework if preferable. Past the authentication stage there is a small web app with a basic homepage, navigation bar and profile page where you can change your email/password.
+
+The only parts to this application that are needed to be changed are the .env.local files which include everything needed by firebase to complete authentication, all can be found within the authentication area within a firebase Web Application. As shown below.
+
+REACT_APP_FIREBASE_API_KEY= Api Key Here
+REACT_APP_FIREBASE_AUTH_DOMAIN= Auth Domain Here
+REACT_APP_FIREBASE_DATABASE_URL= Databse Url Here
+REACT_APP_FIREBASE_PROJECT_ID= Project Id Here
+REACT_APP_FIREBASE_STORAGE_BUCKET= Storage Bucket Link Here
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID= Sender ID Here
+REACT_APP_FIREBASE_APP_ID= App Id Here
 
 Resources used:
 
