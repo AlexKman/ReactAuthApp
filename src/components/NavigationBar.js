@@ -1,43 +1,33 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
+import {
+  Navbar,
+  Button,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import "../css/App.css";
 
 export default function NavigationBar() {
   return (
-    <div>
-      <>
-        <Navbar bg="light">
-          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-        </Navbar>
-        <br />
-        <Navbar bg="light">
-          <Navbar.Brand>Brand text</Navbar.Brand>
-        </Navbar>
-        <br />
-        <Navbar bg="dark">
-          <Navbar.Brand href="#home">
-            <img
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-        </Navbar>
-        <br />
-        <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{" "}
-            React Bootstrap
-          </Navbar.Brand>
-        </Navbar>
-      </>
-    </div>
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link>
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
+          </Nav.Link>
+        </Nav>
+        <Nav>
+          <Nav.Link>Profile</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }

@@ -8,3 +8,14 @@
   /* width: 100%; */
   max-width: "400px";
 }
+
+.text {
+  font-family: "Brush Script MT", cursive;
+  font-size: 52px;
+  font-variant: normal;
+  font-weight: 1;
+  line-height: 24px;
+  color: #d31b0d;
+  text-decoration: none;
+  text-align: center;
+}

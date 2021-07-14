@@ -21,8 +21,9 @@ export default function Dashboard() {
   }
 
   return (
-    <React.Fragment>
-      <Container>
+    <div>
+      <NavigationBar></NavigationBar>
+      {/* <Container>
         <div className="w-100" style={{ maxWidth: "400px" }}>
           <div>
             {" "}
@@ -37,7 +38,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-      </Container>
-    </React.Fragment>
+      </Container> */}
+    </div>
   );
 }
