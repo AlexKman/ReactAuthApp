@@ -22,16 +22,10 @@ export default function SignOut() {
 
   return (
     <div>
-      <Container>
-        <div className="w-100" style={{ maxWidth: "400px" }}>
-          <div>
-            {error && <Alert variant="danger">{error}</Alert>}
-            <div className="w-100 text-center mt-2">
-              <Button onClick={handleLogout}>Log Out</Button>
-            </div>
-          </div>
-        </div>
-      </Container>
+      {error && <Alert variant="danger">{error}</Alert>}
+      <div className="w-100 text-center mt-2">
+        <Button onClick={handleLogout}>Log Out</Button>
+      </div>
     </div>
   );
 }

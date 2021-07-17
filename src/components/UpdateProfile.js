@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
+import SignOut from "./SignOut";
 
 export default function UpdateProfile() {
   const emailRef = useRef();
@@ -85,6 +86,8 @@ export default function UpdateProfile() {
           </Card>
           <div className="w-100 text-center mt-2">
             <Link to="/">Cancel</Link>
+
+            <SignOut></SignOut>
           </div>
         </div>
       </Container>

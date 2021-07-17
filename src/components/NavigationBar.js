@@ -21,11 +21,6 @@ export default function NavigationBar() {
               Profile
             </Link>
           </Nav.Link>
-          <Nav.Link>
-            <Link className="nav-link" to="/update-profile">
-              Signout
-            </Link>
-          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
