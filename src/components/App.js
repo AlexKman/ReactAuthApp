@@ -19,7 +19,10 @@ function App() {
             <Route path="/signup" component={SignUp}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/forgot-password" component={ForgotPassword}></Route>
-            <Route path="/update-profile" component={UpdateProfile}></Route>
+            <PrivateRoute
+              path="/update-profile"
+              component={UpdateProfile}
+            ></PrivateRoute>
           </Switch>
         </AuthProvider>
       </Router>
